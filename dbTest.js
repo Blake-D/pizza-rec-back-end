@@ -1,9 +1,10 @@
 const Prices = require('./models/Prices')
+const Types = require('./models/Types')
 
-function pricesEntry(){
-    Prices.create({
-        range: "$$$$$"
+function typesEntry(){
+    Types.create({
+        type: "neapolitan"
     })
 }
 
-pricesEntry()
+typesEntry()
