@@ -17,7 +17,6 @@ router.get('/types', (req, res) => {
 })
 
 router.post('/pizzarias', (req, res) => {
-    // console.log(req.body.thing)
     Pizzarias.find({priceRange: req.body.param1, typeServed: req.body.param2})
         .then(pizzariaData => res.send(pizzariaData))
 })
